@@ -1,2 +1,5 @@
 Notes;
 
+- add custom criteria to allow copy to be optimized
+- gitignore api key
+- improve frontend

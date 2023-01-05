@@ -1,0 +1,25 @@
+<!-- home.html -->
+
+<head>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<style>
+  /* Additional inline styles go here */
+</style>
+
+<div class="prompt-box">
+  <h1>Enter Your Text</h1>
+  <form action="/improve" method="post">
+    <textarea name="text" placeholder="Enter your text here"></textarea>
+    <br>
+    <input type="submit" value="Improve">
+  </form>
+</div>
+
+<div class="improved-text">
+  {% if improved_text %}
+    <h1>Improved Text</h1>
+    <p>{{ improved_text }}</p>
+  {% endif %}
+</div>
